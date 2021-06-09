@@ -10,7 +10,8 @@ let config = {
 
 /*
  * This function gets the repo data using the user and repo name parameters passed in the API call. We
- * then call the github API to 
+ * then call the github API to valdiate that the repo exists, otherwise we send an error to the user that
+ * come directly from the github API.
  */
 exports.getRepoData = async (req, res, next) => {
     //Obtaining the parameters from the url
