@@ -8,7 +8,7 @@ STEPS TO RUN:
 
 STEPS TO TEST CODE:
 
-1. Once the API is running, access: `http://localhost:3000/api/v1/exactRequest?githubUrl=<some github repo url>` (please remember to use the githubUrl param)
+1. Once the API is running, access: `http://localhost:3000/api/v1/exactRequest?githubUrl=https://github.com/<user>/<repo>` (please remember to use the githubUrl param)
 2. Test with valid and invalid repos.
 
 
@@ -19,7 +19,7 @@ I've added a `.gitignore` to not track the node_modules and package-lock.json fi
 is how I would store this as a repo in github.
 
 
-I have also added an additional route, `http://localhost:3000/api/v1/additionalInfo?githubUrl=<some github repo url>`. This will 
+I have also added an additional route, `http://localhost:3000/api/v1/additionalInfo?githubUrl=https://github.com/<user>/<repo>`. This will 
 provide a bit more information on the repository and each of the Pull Requests. The fields for this route are as follows:
 
 
