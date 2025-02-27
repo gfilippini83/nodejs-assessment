@@ -5,6 +5,7 @@ const helpers = require('../utils/helper.utils')
 exports.validate = async (req, res, next) => {
     //Getting the user and repo from the Github URL
     const dict = helpers.splitUrl(req.query.githubUrl)
+    
 
     //Making sure that the user and repo are set, otherwise there was an error with the URL
     if(Object.keys(dict).includes('user') && Object.keys(dict).includes('repo')) {
